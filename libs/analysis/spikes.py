@@ -143,9 +143,9 @@ def compute_peth_longdf(
     df_list = []
     for trial_idx in range(n_trials):
         df_list.append(pd.DataFrame({
-            'Time': time_points,
-            'Trial': trial_idx,
-            'Spike_rate': trial_spike_rate[trial_idx]
+            'time': time_points,
+            'trial': trial_idx,
+            'spike_rate': trial_spike_rate[trial_idx]
         }))
     
     peth = pd.concat(df_list, ignore_index=True)
@@ -173,7 +173,7 @@ def peth_to_longdf(peth: dict) -> pd.DataFrame:
     # Decide which key to use for the values
     if 'spike_rate' in peth:
         values = peth['spike_rate']
-        value_name = 'Spike_rate'  
+        value_name = 'spike_rate'  
     elif 'spike_counts' in peth:
         values = peth['spike_counts']
         value_name = 'Spike_counts'
@@ -187,8 +187,8 @@ def peth_to_longdf(peth: dict) -> pd.DataFrame:
     df_list = []
     for trial_idx in range(n_trials):
         df = pd.DataFrame({
-            'Time': time_points,
-            'Trial': trial_idx+1,
+            'time': time_points,
+            'trial': trial_idx+1,
             value_name: values[trial_idx]
         })
         df_list.append(df)

@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap
 import seaborn as sns
 import pickle
-import cv2
+#import cv2
 
 # Local libraries
 import libs.utils.utils as utils
@@ -118,7 +118,7 @@ class Session:
         self.session_information = self.load_session_information()
         return self
     
-    def add_sorting_analyzer(self, i_imec=0, folder_name='sorting_analyzer'):
+    def add_sorting_analyzer(self, i_imec=0, folder_name='sorting_analyzer_dredge'):
         sorting_analyzer, base_dir = self.load_sorting_analyzer(i_imec=i_imec, folder_name=folder_name)
         self.sorting_analyzer = sorting_analyzer
         self.sorting_analyzer_base_dir = base_dir
