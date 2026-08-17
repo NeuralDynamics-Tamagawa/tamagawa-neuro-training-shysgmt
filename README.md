@@ -8,11 +8,9 @@
 ### 環境構築
 
 #### python3.12.3をダウンロード
-
+https://www.python.org/downloads/release/python-3123/
 
 インストールしたPythonがどこにあるか確認（このパスをメモしておく）
-
-
 ```
 where /R C:\Users\rodentia01 python.exe
 ```
