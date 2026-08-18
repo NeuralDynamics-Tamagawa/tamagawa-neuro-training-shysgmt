@@ -75,7 +75,7 @@ class Session:
         base_dir = os.path.join(self.session_dir, 'spikeinterface', imec_folder, folder_name)
         path = os.path.join(base_dir)
         print(f'Loading sorting_analyzer from {path}')
-        sorting_analyzer = si.load_sorting_analyzer(path)
+        sorting_analyzer = si.load_sorting_analyzer(path, load_extensions=False)
         return sorting_analyzer, base_dir
     
     
