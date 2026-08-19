@@ -51,4 +51,4 @@
 
 解析環境のセットアップ手順は、以下を参照してください。
 
-[環境構築手順](docs/environment_setup.md)
+[環境構築手順](./docs/environment_setup.md)
