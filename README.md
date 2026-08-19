@@ -1,8 +1,5 @@
 # 玉川大学脳科学トレーニングコース  
-### Tamagawa University Neuroscience Training Course
-
-## げっ歯類を用いた脳システム研究法コース  
-### Rodent Brain Systems Research Course
+##(げっ歯類を用いた脳システム研究法コース)  
 
 ## 概要
 
