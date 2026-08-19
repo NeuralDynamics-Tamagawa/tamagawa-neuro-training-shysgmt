@@ -1,4 +1,4 @@
-## 環境構築
+# 環境構築
 
 解析を実行するために必要なPython環境をWindows上に構築します。
 
@@ -43,7 +43,7 @@
 
 ---
 
-### 1. Gitをインストールする
+## 1. Gitをインストールする
 
 以下からGit for Windowsをダウンロードしてインストールします。
 
@@ -51,7 +51,7 @@ https://git-scm.com/install/windows
 
 ---
 
-### 2. リポジトリをダウンロードする
+## 2. リポジトリをダウンロードする
 
 Git Bashを開き、リポジトリを保存するディレクトリへ移動します。
 
@@ -72,7 +72,7 @@ git clone https://github.com/NeuralDynamics-Tamagawa/tamagawa-neuro-training-shy
 
 ---
 
-### 3. Python 3.12.3をインストールする
+## 3. Python 3.12.3をインストールする
 
 以下からPython 3.12.3をダウンロードします。
 
@@ -88,11 +88,11 @@ Add python.exe to PATH
 
 ---
 
-### 4. PowerShellを使って環境構築する
+## 4. PowerShellを使って環境構築する
 
 以降の操作はPowerShellで行います。
 
-#### 4.1 Pythonの場所を確認する
+### 4.1 Pythonの場所を確認する
 
 ```powershell
 where /R C:\Users\<username> python.exe
@@ -117,7 +117,7 @@ C:\Users\<username>\AppData\Local\Programs\Python\Python312\python.exe
 
 ---
 
-#### 4.2 pipのバージョンを確認する
+### 4.2 pipのバージョンを確認する
 
 以下のコマンドを実行して、pipが正しく使用できることを確認します。
 
@@ -253,7 +253,7 @@ C:\Users\<username>\AppData\Local\Programs\Python\Python312\python.exe
 
 
 
-#### 4.3 Poetryをインストールする
+### 4.3 Poetryをインストールする
 
 ```powershell
 python -m pip install poetry
@@ -267,7 +267,7 @@ poetry --version
 
 ---
 
-#### 4.4 プロジェクトフォルダへ移動する
+## 4.4 プロジェクトフォルダへ移動する
 
 ```powershell
 cd C:\Users\<username>\tamagawa-neuro-traing-course-20XX\tamagawa-neuro-training-shysgmt
@@ -277,7 +277,7 @@ cd C:\Users\<username>\tamagawa-neuro-traing-course-20XX\tamagawa-neuro-training
 
 ---
 
-#### 4.5 `.venv` をプロジェクト内に作成するよう設定する
+### 4.5 `.venv` をプロジェクト内に作成するよう設定する
 
 ```powershell
 poetry config virtualenvs.in-project true --local
@@ -287,7 +287,7 @@ poetry config virtualenvs.in-project true --local
 
 ---
 
-#### 4.6 使用するPythonを指定する
+### 4.6 使用するPythonを指定する
 
 例：
 
@@ -302,7 +302,7 @@ Pythonのパスは、それぞれのPCで確認したものに変更してくだ
 
 ---
 
-#### 4.7 Python環境を作成する
+### 4.7 Python環境を作成する
 
 ```powershell
 poetry install
@@ -312,7 +312,7 @@ poetry install
 
 ---
 
-#### 4.8 Jupyter用kernelを登録する
+### 4.8 Jupyter用kernelを登録する
 
 Poetry環境内のPythonを、Jupyter NotebookやVS Codeから使用できるようにkernelとして登録します。
 
@@ -366,7 +366,7 @@ Python (tmgw-neuro-train)
 
 ---
 
-#### 4.9 環境を確認する
+### 4.9 環境を確認する
 
 Poetryが使用している環境を確認します。
 
@@ -387,7 +387,7 @@ print(sys.version)
 
 ---
 
-#### セットアップコマンドまとめ
+### セットアップコマンドまとめ
 
 以下のコマンドを上から順番に実行することで環境を構築できます。
 
